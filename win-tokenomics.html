@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2215%22 fill=%22%231DB47A%22/><text y=%22.9em%22 font-size=%2270%22 x=%2215%22 fill=%22white%22 font-weight=%22bold%22>C</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WIN Tokenomics in Plain English — Supply, Halving, Proof of Action</title>
+  <meta name="description" content="WIN tokenomics explained without price talk: 50 billion hard cap, annual halving schedule, Proof-of-Action distribution, native token vs ERC-20 bridge. Sourced from the WIN Charter.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://connectunited.guide/win-tokenomics">
+  <meta property="og:title" content="WIN Tokenomics in Plain English — Supply, Halving, Proof of Action">
+  <meta property="og:description" content="WIN tokenomics explained without price talk: 50 billion hard cap, annual halving schedule, Proof-of-Action distribution, native token vs ERC-20 bridge. Sourced from the WIN Charter.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://connectunited.guide/win-tokenomics">
+  <meta property="og:image" content="https://connectunited.guide/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@connect_win">
+  <meta name="twitter:image" content="https://connectunited.guide/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "WIN Tokenomics in Plain English — Supply, Halving, Proof of Action",
+    "description": "WIN tokenomics explained without price talk: 50 billion hard cap, annual halving schedule, Proof-of-Action distribution, native token vs ERC-20 bridge. Sourced from the WIN Charter.",
+    "url": "https://connectunited.guide/win-tokenomics",
+    "datePublished": "2026-09-26",
+    "dateModified": "2026-09-26",
+    "author": {"@type": "Organization", "name": "Connect United Guide"},
+    "publisher": {"@type": "Organization", "name": "Connect United Guide", "url": "https://connectunited.guide"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://connectunited.guide/"},
+      {"@type": "ListItem", "position": 2, "name": "WIN Tokenomics", "item": "https://connectunited.guide/win-tokenomics"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does WIN have a maximum supply?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Public charter materials state total supply of 50,000,000,000 WIN."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is halving here?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A schedule where the amount distributed from remaining supply decreases over annual periods until distribution completes, as written in the charter."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do people earn distribution under the charter's node section?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By meeting Proof-of-Action activity conditions that earn points; shares of the daily allocation follow from those points under the distribution smart-contract process described in the charter."
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Connect United Guide home">
+      <div class="nav-logomark" aria-hidden="true">C</div>
+      <span class="nav-wordmark">Connect United Guide</span>
+    </a>
+    <div class="nav-links">
+      <a href="/what-is-connect">What is Connect?</a>
+      <a href="/how-nodes-work">Nodes</a>
+      <a href="/governance">Governance</a>
+      <a href="/learn2earn">Learn2Earn</a>
+      <a href="/glossary">Glossary</a>
+      <a href="/is-connect-united-a-scam">DYOR</a>
+      <a href="https://support.connectunited.com" target="_blank" rel="noopener">Support</a>
+    </div>
+    <a href="https://connectunited.com" class="nav-cta" target="_blank" rel="noopener">Visit Platform →</a>
+    <button class="nav-mobile-toggle" aria-label="Open menu">☰</button>
+  </div>
+</nav>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span><span>WIN Tokenomics</span>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">Supply · Halving · Proof of Action · Educational Only</div>
+    <h1>WIN Tokenomics in Plain English</h1>
+    <p class="page-hero-updated" style="color:rgba(255,255,255,0.4);font-size:13px;margin-top:8px;">Last updated: September 2026</p>
+  </div>
+</div>
+
+<nav class="cluster-nav"><div class="cluster-nav-inner">
+  <a href="#definition" class="cluster-tab active">Definition</a>
+  <a href="#hard-cap" class="cluster-tab">Hard cap</a>
+  <a href="#halving" class="cluster-tab">Halving schedule</a>
+  <a href="#proof-of-action" class="cluster-tab">Proof-of-Action distribution</a>
+  <a href="#native-vs-erc20" class="cluster-tab">Native vs ERC-20</a>
+  <a href="#who-sets" class="cluster-tab">Who sets parameters</a>
+  <a href="#faq" class="cluster-tab">Quick FAQ</a>
+  <a href="#sources" class="cluster-tab">Sources</a>
+</div></nav>
+
+<section class="section" style="background: var(--surface);">
+  <div class="section-inner">
+    <div class="article-body">
+
+      <div class="callout">
+        <strong>Primary source for this page:</strong> the Win Blockchain Node Network Charter on the DGF site (<a href="https://win.node-governance.io/docs/win-charter.pdf" target="_blank" rel="noopener">win-charter.pdf</a>). Re-read the live charter before you rely on any figure. Governance can update parameters through published processes.
+      </div>
+
+      <h2 id="definition">Short definition</h2>
+      <p>WIN tokenomics describes the fixed maximum supply of WIN, the schedule used to distribute that supply over time, and the Proof-of-Action rules that determine how eligible participants earn distribution. Public charter materials state a total supply of 50,000,000,000 WIN and an annual halving schedule beginning in 2022.</p>
+
+      <h2 id="hard-cap">Hard cap / total supply</h2>
+      <p>According to the WIN Charter:</p>
+      <ul>
+        <li>Total supply of Win Blockchain Tokens: 50,000,000,000 (50 billion)</li>
+        <li>That figure functions as the documented maximum supply for the token as defined in the charter</li>
+      </ul>
+      <p>What that means in plain English: the charter sets a fixed ceiling on how many WIN tokens exist under those parameters. It does not tell you what any token is "worth."</p>
+
+      <h2 id="halving">Annual halving schedule</h2>
+      <p>The charter states WIN tokens are distributed on an annual halving schedule beginning October 1, 2022 (the Halving Date), with half of total supply distributed in the first year and half of the remaining supply distributed each subsequent year (around the Halving Date, accounting for leap years).</p>
+      <p>Illustrative schedule from the charter:</p>
+      <ul>
+        <li>Year 1: 25,000,000,000 tokens (50% distributed)</li>
+        <li>Year 2: 12,500,000,000 tokens (75% distributed)</li>
+        <li>Year 3: 6,250,000,000 tokens (87% distributed)</li>
+        <li>Year 4: 3,125,000,000 tokens (93% distributed)</li>
+        <li>Year 5: 1,562,500,000 tokens (96% distributed)</li>
+        <li>The halving schedule continues until all tokens are distributed</li>
+      </ul>
+      <p>Plain English: earlier years release more of the remaining supply; later years release less, until distribution under that schedule completes.</p>
+
+      <h2 id="proof-of-action">Proof-of-Action distribution (how earning is described)</h2>
+      <p>Section 5.3 of the charter describes Node Operator Proof-of-Action Rewards. In plain English, the described flow is:</p>
+      <ol>
+        <li>A pre-set amount of WIN digital rewards is allocated for a distribution period</li>
+        <li>Eligible node operators earn action points by meeting published activity conditions</li>
+        <li>A distribution smart contract helps calculate each operator's share of total points</li>
+        <li>Each operator is assigned the corresponding share of that period's WIN allocation</li>
+      </ol>
+      <p>Examples of point-earning conditions described in the charter (simplified):</p>
+      <ul>
+        <li>Keeping a Win SmartNode active for at least six hours in a day</li>
+        <li>Keeping a Win LiteNode active for at least six hours (point weight described as a ratio tied to SmartNode pricing parameters in the charter)</li>
+        <li>Additional points when a SmartNode is connected to other qualifying products (such as Foundations SmartNode or BlockBot connections) for at least six hours, under charter rules</li>
+      </ul>
+      <p>The charter also notes distribution to wallets may lag earnings by a period of time (not to exceed 5 days) while distribution mechanisms run.</p>
+      <div class="callout">
+        <strong>Important:</strong> these are operational participation rules, not return promises. Being eligible and being online are described as conditions — not guarantees of any market outcome.
+      </div>
+
+      <h2 id="native-vs-erc20">Native WIN vs ERC-20 WIN</h2>
+      <p>Charter definitions distinguish:</p>
+      <ul>
+        <li><strong>Win Blockchain Native Token</strong> — WIN digital rewards on the reward-chain / native network context</li>
+        <li><strong>Win Blockchain ERC-20</strong> — WIN issued according to the ERC-20 standard (bridged / Ethereum-rail representation)</li>
+      </ul>
+      <p>Plain English: one ecosystem, two rails you should verify separately:</p>
+      <ul>
+        <li>Native activity on the <a href="https://win.elevatescan.com" target="_blank" rel="noopener">WIN explorer</a></li>
+        <li>ERC-20 contract activity on Etherscan (confirm the official contract from primary docs)</li>
+      </ul>
+      <p>See also: <a href="/how-to-verify-a-blockchain">How to verify a blockchain yourself</a>.</p>
+
+      <h2 id="who-sets">Who sets the parameters?</h2>
+      <p>Charter language places responsibility with the Node Network DGF for defining Node Network Parameters that can give rise to rewards, and for defining distribution-algorithm parameters and reward levels — subject to the governance framework.</p>
+      <p>Plain English: tokenomics is not only a static blog graphic. Key levers are described as governance-managed. Read the <a href="/what-is-dgf">DGF materials</a> if you want to understand how changes can occur.</p>
+
+      <h2>What WIN tokenomics is</h2>
+      <ul>
+        <li>A documented supply ceiling</li>
+        <li>A documented long-range distribution schedule (halving)</li>
+        <li>A documented participation-based distribution design (<a href="/what-is-proof-of-action">Proof of Action</a>)</li>
+        <li>A dual-rail setup (native + ERC-20) that should be verified independently</li>
+      </ul>
+
+      <h2>What WIN tokenomics is not</h2>
+      <ul>
+        <li>A price target or return forecast</li>
+        <li>A guarantee that any person will earn any specific amount</li>
+        <li>A substitute for reading the live charter, explorer, and governance records</li>
+        <li>Financial, legal, or tax advice</li>
+      </ul>
+
+      <h2 id="faq">Quick FAQ</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does WIN have a maximum supply?<span class="faq-toggle" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>Public charter materials state total supply of 50,000,000,000 WIN.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is halving here?<span class="faq-toggle" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>A schedule where the amount distributed from remaining supply decreases over annual periods until distribution completes, as written in the charter.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How do people earn distribution under the charter's node section?<span class="faq-toggle" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>By meeting Proof-of-Action activity conditions that earn points; shares of the daily allocation follow from those points under the distribution smart-contract process described in the charter.</p></div>
+        </div>
+      </div>
+
+      <h2>Related pages</h2>
+      <ul>
+        <li><a href="/what-is-proof-of-action">What is Proof of Action?</a></li>
+        <li><a href="/what-is-dgf">What is the DGF?</a></li>
+        <li><a href="/wallet-rewards">Wallet &amp; rewards FAQ</a></li>
+        <li><a href="/security-risk">Security &amp; risk</a></li>
+        <li><a href="/how-to-verify-a-blockchain">How to verify a blockchain yourself</a></li>
+      </ul>
+
+      <h2 id="sources">Sources — verify yourself</h2>
+      <div class="verify-box">
+        <div class="verify-link"><span>Win Blockchain Node Network Charter (PDF)</span><a href="https://win.node-governance.io/docs/win-charter.pdf" target="_blank" rel="noopener">win-charter.pdf ↗</a></div>
+        <div class="verify-link"><span>Win DGF site</span><a href="https://win.node-governance.io" target="_blank" rel="noopener">win.node-governance.io ↗</a></div>
+        <div class="verify-link"><span>Connect DGF support article</span><a href="https://support.connectunited.com/hc/en-us/articles/23712909423515-Win-Distributed-Governance-Framework-DGF" target="_blank" rel="noopener">support.connectunited.com ↗</a></div>
+        <div class="verify-link"><span>WIN explorer</span><a href="https://win.elevatescan.com" target="_blank" rel="noopener">win.elevatescan.com ↗</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="site-disclaimer">
+  <div class="disclaimer-inner">
+    <strong>Educational only — not financial, legal, or investment advice.</strong> Digital assets involve risk. Program details can change through governance; re-check primary sources before you act.
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:0;"><div class="nav-logomark">C</div><span class="nav-wordmark">Connect United Guide</span></div>
+        <p>An independent educational resource about Connect United and the WIN Blockchain. Not affiliated with or endorsed by Connect United.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="/what-is-connect">What is Connect?</a>
+        <a href="/how-nodes-work">How nodes work</a>
+        <a href="/learn2earn">Learn2Earn</a>
+        <a href="/governance">Governance</a>
+        <a href="/glossary">Glossary</a>
+      </div>
+      <div class="footer-col">
+        <h4>Research</h4>
+        <a href="/wallet-rewards">Wallet &amp; rewards</a>
+        <a href="/security-risk">Security &amp; risk</a>
+        <a href="/is-connect-united-a-scam">Is it a scam?</a>
+        <a href="/how-to-verify-a-blockchain">Verify a blockchain</a>
+        <a href="https://support.connectunited.com" target="_blank" rel="noopener">Official Support</a>
+      </div>
+      <div class="footer-col">
+        <h4>Verify</h4>
+        <a href="https://win.elevatescan.com" target="_blank" rel="noopener">WIN Block Explorer</a>
+        <a href="https://etherscan.io/token/0xb10cb07ca2cdac77fbb5707f6690301f9d036f45" target="_blank" rel="noopener">Etherscan (ERC-20)</a>
+        <a href="https://win.node-governance.io" target="_blank" rel="noopener">Governance Docs</a>
+        <a href="https://connectunited.com" target="_blank" rel="noopener">Official Platform</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 connectunited.guide — Independent educational resource</span>
+      <div style="display:flex;gap:20px;"><a href="/disclaimer">Disclaimer</a><a href="/privacy">Privacy</a><a href="https://connectunited.com" target="_blank" rel="noopener">Official site →</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/site.js"></script>
+</body>
+</html>
